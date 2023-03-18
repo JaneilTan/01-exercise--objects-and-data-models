@@ -64,16 +64,39 @@ const countries = {
 
 // Represent an artist and their albums
 // https://www.allmusic.com/artist/prince-mn0000361393/discography
-const artist = null;
+const artist = {
+  name: "Prince",
+  bio: "No other artist of the rock & roll era compares to Prince. He was the rare combination of a visionary pop conceptualist and master musician who could capture the sounds he imagined, a quality that fueled his remarkable success in the 1980s. Ideas came to Prince so quickly, they couldn't be contained on his own records, either with or without his backing band the Revolution.",
+  albums: ["For You", "Prince", "Dirty Mind","Controversy", "1999"] 
+}
 
 // Represent a list of news articles
 // https://news.ycombinator.com/
-const articles = null;
+const articles = {
+  articles: [{
+  name: "SETI@home is in hibernation",
+  link: "https://setiathome.berkeley.edu/",
+  }, {
+  name: "How to own your own Docker Registry address",
+  link: "https://httptoolkit.com/blog/docker-image-registry-facade/",
+  }, 
+  {
+  name: "ViperGPT: Visual Inference via Python Execution for Reasoning",
+  link: "https://viper.cs.columbia.edu/",
+  },
+],
+};
+
+
+  
 
 // Represent a cafe menu
 // https://www.thequaykitchen.co.nz/menu/main-menu
-const menu = null;
-
+const menu = {
+    brunch: ['Quay Toasted Bagel', 'Homemade Muffin Of The Day', 'Quay Smoothie Bowl'],
+    pizza: ['Margherita', 'El Loco', 'Calzone'],
+    entree: ['Breads and Dips', 'Chicken and Waffles', 'Black Salt Calamari']
+};
 
 // IGNORE! Do not edit the below text - it's used to make the tests run
 export {
