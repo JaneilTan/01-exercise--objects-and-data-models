@@ -14,11 +14,11 @@ const person = {
 // Replace null with the firstName and lastName from the person object
 // You should access the value using dot notation
 // Use a string template literal to combine the names together, with a space in the middle
-const personsName = null;
+const personsName = `${person.firstName} ${person.lastName}`;
 
 // Replace null with the second item from the friends array, from the person object. It should result in the value "Sam"
 // You should access the value using dot notation, and array indexes
-const secondFriend = null;
+const secondFriend = `${person.friends[1]}`;
 
 // Use this object to look up the correct tax rate from the getTaxRate function
 const taxRates = {
@@ -33,7 +33,7 @@ const getTaxRate = (stateCode) => {
   // Replace null with the correct state code
   // Use square bracket notation to read from the taxRates object
   // https://www.loom.com/share/4edb4131d48f40e8bb0d527365932e4c
-  return null;
+  return taxRates[stateCode];
 };
 
 const utTaxRate = getTaxRate("ut");
@@ -43,8 +43,20 @@ const nvTaxRate = getTaxRate("nv");
 // countries.newZealand.population should be 5000000
 // countries.newZealand.cities[0] should be "Auckland"
 // You can make up the rest of the countries
-const countries = {};
-
+const countries = {
+  newZealand: {
+    population: 5000000,
+    cities: ['Auckland', 'Whangarei', 'Wellington']
+  },
+  canada: {
+    population: 38000000,
+    cities: ['Vancouver', 'Toronto']
+  },
+  fiji: {
+    population: 924610,
+    cities:['Suva','Nadi']
+  }
+};
 /**
  * PART B
  * Data models
@@ -61,6 +73,7 @@ const articles = null;
 // Represent a cafe menu
 // https://www.thequaykitchen.co.nz/menu/main-menu
 const menu = null;
+
 
 // IGNORE! Do not edit the below text - it's used to make the tests run
 export {
